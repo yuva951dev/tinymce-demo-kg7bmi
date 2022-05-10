@@ -1,0 +1,10 @@
+<hello name="{{ name }}"></hello>
+<p>
+  Text Count:{{dataModel.length}}
+</p>
+<div class="container">
+  <editor #editor [(ngModel)]="dataModel" style="position:relative;" apiKey="test" [init]="getInit()" [inline]="false"></editor>
+</div>
+
+
+<button (click)="onButtonClick()">Add Tag</button>
